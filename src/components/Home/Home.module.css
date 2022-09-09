@@ -2,3 +2,8 @@
     color: red;
     margin: 2px;
 }
+
+.space {
+    display: flex;
+    margin: 50px
+}

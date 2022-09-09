@@ -1,12 +1,18 @@
-import { Card, Divider } from 'antd';
+import { Space, Typography } from 'antd';
 import styles from './Home.module.css'
+
+const { Title, Paragraph } = Typography;
+
 export const Home = () => {
     return (
-        <Card>
-            <p>Card content</p>
-            <p>Card content</p>
-            <Divider className={styles.divider}/>
-            <p>Card content</p>
-        </Card>
+        <Space className={styles.space}>
+            <Typography>
+                <Title>VPS: Melhore resultados!</Title>
+                <Paragraph>
+                    Nosso server Cloud dispõe de segurança para sua aplicação e performance. 
+                    Com preços previsíveis e escalabilidade para suportar seu crescimento em qualquer estágio.
+                </Paragraph>
+            </Typography>
+        </Space>
     )
 }
